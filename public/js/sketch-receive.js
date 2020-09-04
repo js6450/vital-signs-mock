@@ -62,7 +62,7 @@ function draw(){
 
     for(let j = 0; j < users.length; j++){
         let particles = users[j];
-        translate(width / 2 * j, 0);
+        translate(width / 4 * j, 0);
         push();
         for(let i = 0; i < particles.length; i++){
             particles[i].update();
