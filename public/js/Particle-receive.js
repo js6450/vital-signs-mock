@@ -48,7 +48,9 @@ class Particle{
         if(this.drawParticle){
             noStroke();
             fill(this.r, this.g, this.b, this.opacity);
-            ellipse(this.x, this.y, this.size, this.size);
+//            ellipse(this.x, this.y, this.size, this.size);
+           rect(this.x, this.y, this.size, this.size);
+
         }
     }
 }
