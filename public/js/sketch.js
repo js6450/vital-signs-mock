@@ -32,8 +32,8 @@ function setup() {
     bodypix.segment(video, gotResults);
     pixelDensity(1);
 
-    for(let y = 0; y < camHeight; y += 3){
-        for(let x = 0; x < camWidth; x += 3){
+    for(let y = 0; y < camHeight; y += 2){
+        for(let x = 0; x < camWidth; x += 2){
             let mappedX = map(x, 0, camWidth, width, 0);
             let mappedY = map(y, 0, camHeight, 0, height);
 
@@ -76,7 +76,7 @@ function keyPressed(){
 
 
 function draw(){
-    background(255, 30);
+    background(0, 30);
 
     if(pixelData != null && prevPixelData != null){
 
